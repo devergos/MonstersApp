@@ -30,7 +30,10 @@ class Monsters extends Component {
         const monsters = this.state.monsters.filter(monster => monster.name.toLowerCase().includes(searchField));
         return (
             <div>
-                <Search searchMonster={this.onChangeField} />
+                <h1>
+                    Monster Rolodex
+                    </h1>
+                <Search placeholder="search monsters" searchMonster={this.onChangeField} />
                 <CardList monsters={monsters} />
             </div>
         )
